@@ -1,0 +1,18 @@
+*{
+    font-family: Poppins;
+}
+
+* h1{
+    font-size: 5.5rem;
+}
+
+/* Home start */
+.home{
+    background-color: darkgray;
+    color: white;
+    justify-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+/* Home end */
+
