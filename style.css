@@ -4,8 +4,8 @@
 
 body{
     background-color: black;
-    background-image: url(img/body-bg.jpg);
-    background-size: contain;
+    background-image: url(img/body-bg-blur-10.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: repeat;
 }
@@ -13,7 +13,7 @@ body{
 :root {
     --Black: #181823;
     --Primer: #402E7A;
-    --Light: #4C3BCF;
+    --Light: rgb(76, 59, 207);
     --Lighter: #4B70F5;
     --White: #E9F8F9;
     --gray: #9AA6B2;
@@ -27,7 +27,7 @@ body{
 }
 
 * h2{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: var(--White);
 }
 
@@ -76,6 +76,10 @@ body{
     color: var(--White) !important;
 }
 
+.navbar-nav{
+    /* filter: opacity(); */
+}
+
 /* navbar end */
 
 
@@ -86,7 +90,6 @@ body{
     left: 0;
     width: 100%;
     height: 100vh;
-    margin-bottom: 70px;
     color: var(--White);
     z-index: -1;
 }
@@ -111,11 +114,11 @@ body{
 
 .keterampilan{
     flex-direction: column;
-    margin-top: 35px;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
 }
 
 .keterampilan h1{
+    padding-top: 125px;
     margin-bottom: 10px;
 }
 
@@ -124,11 +127,11 @@ body{
     color: var(--gray);
 }
 
-.keterampilan .kartu{
+.kartu{
     margin: 10px;
 }
 
-.card{
+.card-keterampilan{
     background-color: var(--Black);
     padding-top: 25px;
     padding-bottom: 25px;
@@ -169,12 +172,74 @@ body{
 /* keterampilan end */
 
 
+/* proyek start */
+
+.proyek{
+    margin-bottom: 200px;
+    flex-direction: column;
+}
+
+.proyek h1{
+    padding-top: 125px;
+    margin-bottom: 100px;
+}
+
+.card-proyek{
+    background-color: var(--Black);
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.proyek .card-title a{
+    padding-top: 125px;
+    margin-bottom: 100px;
+}
+
+.proyek .kartu{
+    border-radius: 25px;
+    text-align: start;
+}
+
+.proyek .card-title{
+    /* background-color: red; */
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--Lighter);
+    margin-bottom: 35px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.proyek .card-title:hover{
+    font-size: 40px;
+    transition: 1s;
+}
+
+.proyek .kartu .kartu-sub{
+    font-size: 1rem;
+}
+
+.proyek .kartu .card-text{
+    /* background-color: red; */
+    text-decoration: none;
+    color: var(--gray);
+}
+
+
+/* proyek end */
+
+
 /* about start */
 
 .tentang{
     margin-top: 200px;
     margin-bottom: 250px;
     flex-direction: column;
+}
+
+.tentang h1{
+    padding-top: 125px;
 }
 
 .tentang img{
@@ -192,14 +257,20 @@ body{
 }
 
 .tentang .bio .biodata{
-    align-items: center;
     text-align: start;
     margin-top: 50px;
+    background-color:  rgba(76, 59, 207, 0.6);
+    border: 3px solid var(--Light);
+    color: var(--gray);
+    border-radius: 25px;
+    padding: 20px;
 }
 
-.tentang .bio .biodata h2{
-    color: var(--White);
-    line-height: 45px;
+.tentang .bio .biodata p{
+    margin-top: 20px;
+    font-size: 16px;
+    /* color: var(--White); */
+    line-height: 25px;
 }
 
 /* about end */
