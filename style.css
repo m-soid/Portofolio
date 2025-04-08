@@ -278,6 +278,10 @@ body{
 
 /* footer start */
 
+footer a{
+    font-size: 1.3rem;
+}
+
 footer{
     margin-bottom: 25px;
 }
